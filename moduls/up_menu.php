@@ -20,14 +20,14 @@
              <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle dropdown-inline" href="#" id="navbarDropdown" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false"> ПРОДУКЦИЯ </a>
-               <ul class="dropdown-menu" aria-labelledby="navbarDropdown ">
+               <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown "> -->
 HTML;
 
 
 require_once ("catalog_up_menu.php");
 
 echo <<<HTML
-          </ul>
+          <!-- </ul> -->
          </div>
        </div>
        </div>

@@ -64,12 +64,12 @@ $tree = getTree($cat);
 
 //Шаблон для вывода меню в виде дерева
 function tplMenu($category){
-    $menu = '<li>
-        <a href="#" title="'. $category['title'] .'">'. 
+    $menu = '<li class="nav-item dropdown">
+        <a class="dropdown-item" href="'.$category['link'].'" title="'. $category['title'] .'">'. 
         $category['title'].'</a>';
         
         if(isset($category['childs'])){
-            $menu .= '<ul>'. showCat($category['childs']) .'</ul>';
+            $menu .= '<ul class="dropdown-menu">'. showCat($category['childs']) .'</ul>';
         }
     $menu .= '</li>';
     
@@ -91,6 +91,6 @@ function showCat($data){
 $cat_menu = showCat($tree);
 
 //Выводим на экран
-echo '<ul>'. $cat_menu .'</ul>';
+echo '<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">'. $cat_menu .'</ul>';
 
 ?>
