@@ -14,7 +14,7 @@
 	margin-top: 6px;
 } 
 .dropdown-menu {
-  min-width: 250px;
+  min-width: 100px;
 }
 .dropdown-menu > li.open > a {
 	background-color: #F5F5F5;
